@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import 'semantic-ui-css/semantic.min.css';
 
-import { Link, Route } from 'react-router-dom';
+import {  Route } from 'react-router-dom';
 import { Container } from 'semantic-ui-react';
 
 import MoviesPage from './components/pages/MoviesPage';
@@ -15,7 +15,8 @@ class App extends Component {
       <div className="App">
 				<Header />
 				<Container text>
-                    <Route path='/movies' component={MoviesPage}></Route>
+                    <Route path='/movies' component={MoviesPage}/>
+
 				</Container>
 				<Footer/>
       </div>

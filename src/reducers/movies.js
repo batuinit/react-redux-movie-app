@@ -1,15 +1,16 @@
 import { FETCH_MOVIES_FULFILLED , FETCH_MOVIES_REJECTED} from '../actions/movies';
 
-const initalState = {
+const INITIAL_STATE = {
 	fetching: false,
 	fetched: false,
 	movies: [],
 	error: {}
 };
 
-export default (state = initalState, action) => {
+
+export default (state = INITIAL_STATE, action) => {
 	switch (action.type){
-		case FETCH_MOVIES_FULFILLED :
+		case FETCH_MOVIES_FULFILLED:
 			return {
 				...state,
 				movies: action.payload

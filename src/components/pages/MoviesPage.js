@@ -4,7 +4,6 @@ import { connect } from 'react-redux';
 
 import { fetchMovies } from '../../actions/movies';
 import MoviesList from '../MoviesList';
-
 class MoviesPage extends Component {
 	static propTypes = {
 		movies: PropTypes.object.isRequired
@@ -18,20 +17,19 @@ class MoviesPage extends Component {
 		return (
 			<div>
 				<h2>Movies Page</h2>
-				<MoviesList movies={this.props.movies}></MoviesList>
+				<MoviesList movies={this.props.movies}/>
 			</div>
 		);
 	}
 }
 
 const mapStateToProps = ({ movies }) => {
-	return {
-		movies
-	}
+    return {
+        movies
+    }
 };
-
 const mapDispatchToProps = {
-	fetchMovies
+    fetchMovies,
 };
 
 export default connect(mapStateToProps,mapDispatchToProps)(MoviesPage);
