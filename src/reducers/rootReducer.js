@@ -5,4 +5,3 @@ import movies from './movies';
 export default combineReducers({
 	movies
 })
-

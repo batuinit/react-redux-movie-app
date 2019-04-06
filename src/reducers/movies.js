@@ -1,6 +1,6 @@
 import { FETCH_MOVIES_FULFILLED , FETCH_MOVIES_REJECTED} from '../actions/movies';
 
-const INITIAL_STATE = {
+const initialState = {
 	fetching: false,
 	fetched: false,
 	movies: [],
@@ -8,7 +8,7 @@ const INITIAL_STATE = {
 };
 
 
-export default (state = INITIAL_STATE, action) => {
+export default (state = initialState, action) => {
 	switch (action.type){
 		case FETCH_MOVIES_FULFILLED:
 			return {
@@ -24,3 +24,5 @@ export default (state = INITIAL_STATE, action) => {
 			return state;
 	}
 }
+
+

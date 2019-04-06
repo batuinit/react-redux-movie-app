@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 
 import { fetchMovies } from '../../actions/movies';
 import MoviesList from '../MoviesList';
+
 class MoviesPage extends Component {
 	static propTypes = {
 		movies: PropTypes.object.isRequired
@@ -16,8 +17,8 @@ class MoviesPage extends Component {
 	render() {
 		return (
 			<div>
-				<h2>Movies Page</h2>
-				<MoviesList movies={this.props.movies}/>
+				<h2>Movies</h2>
+				<MoviesList movies={this.props.movies} />
 			</div>
 		);
 	}
