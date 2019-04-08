@@ -10,17 +10,17 @@ const MovieCard = ({ movie }) => (
             </Card.Header>
             <Card.Meta>
         <span className='date'>
-          Joined in 2015
+          Mart 2019
         </span>
             </Card.Meta>
             <Card.Description>
-                Matthew is a musician living in Nashville.
+                Turkish'i Dondurma, Çanakkale Savaşı sırasında Avustralya'da yaşayan iki Türk'ün ülkeleri için verdikleri mücadeleyi konu ediyor.
             </Card.Description>
         </Card.Content>
         <Card.Content extra>
             <a>
                 <Icon name='user' />
-                22 Friends
+                9/10 Puan
             </a>
         </Card.Content>
     </Card>

@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
+import MovieCard from './MovieCard';
+import {Image} from "semantic-ui-react";
 const MoviesList = ({ movies }) => {
 	const emptyMessage = (
 		<p>There are no movies yet.</p>
@@ -11,7 +12,7 @@ const MoviesList = ({ movies }) => {
 			{
 				movies.error.response
 					? <h3>Error retrieving data!</h3>
-					: movies.movies.map(movie =><div key={movie._id}>{movie.title}</div>)
+					: movies.movies.map(movie =><MovieCard key={movie._id} movie={movie} />)
 			}
 		</div>
 	);
