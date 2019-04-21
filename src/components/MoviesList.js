@@ -1,8 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import MovieCard from './MovieCard';
-import {Image} from "semantic-ui-react";
 import  {Grid} from "semantic-ui-react";
+import { BarLoader } from 'react-spinners';
+
 const MoviesList = ({ movies }) => {
 	const emptyMessage = (
 		<p>There are no movies yet.</p>
@@ -10,6 +11,12 @@ const MoviesList = ({ movies }) => {
 
 	const moviesList = (
 		<div>
+			<BarLoader
+				size={30}
+				color={'#36dbd3'}
+				loading={movies.fetching}
+			/>
+
 			{
 				movies.error.response
 					? <h3>Error retrieving data!</h3>

@@ -1,6 +1,6 @@
 import React from 'react'
-import { Card, Icon, Image, GridColumn } from 'semantic-ui-react'
-
+import { Card, GridColumn } from 'semantic-ui-react'
+// Card Css Fixed
 const MovieCard = ({ movie }) => (
     <GridColumn>
         <Card image={movie.cover}
