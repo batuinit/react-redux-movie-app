@@ -12,7 +12,7 @@ const MoviesList = ({ movies }) => {
 	const moviesList = (
 		<div>
 			<BarLoader
-				size={30}
+				size={32}
 				color={'#36dbd3'}
 				loading={movies.fetching}
 			/>
